@@ -1,18 +1,6 @@
-//https://jsonplaceholder.typicode.com/post/
-
-const NAME = "jsonplaceholder.typicode";
-const DOMAIN = `https://${NAME}.com`;
-const USERS = `${DOMAIN}/users`;
-const COMMENTS = `${DOMAIN}/posts/1/comments`;
-const POSTS = `${DOMAIN}/users/1/posts`;
-function SEARCH(page, value) {
-    return `${DOMAIN}/${page}/${value}`;
-} 
-export default {
-    NAME,
-    DOMAIN,
-    USERS,
-    COMMENTS,
-    POSTS,
-    SEARCH
-}
+export const NAME = "jsonplaceholder.typicode";
+export const DOMAIN = `https://${NAME}.com`;
+export const USERS = `${DOMAIN}/users`;
+export const COMMENTS = `${DOMAIN}/posts/1/comments`;
+export const POSTS = `${DOMAIN}/users/1/posts`;
+export const SEARCH = (page, value) => `${DOMAIN}/${page}/${value}`;
